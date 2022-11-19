@@ -1,0 +1,108 @@
+@import 'config';
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #235D79;
+}
+
+h1 {
+  color: #63add0;
+}
+
+.header {
+  padding-top: 20px;
+  .header-title {
+    text-align: center;
+    h1 {
+      color: #63add0;
+    }
+
+  }
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.sidebar {
+  &-item {
+    background: #ffb740;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #a66800;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.form-div {
+  text-align: center;
+  /* width: 500px; */
+}
+
+
+.form > input {
+  background: #63add0;
+  border: 0;
+  outline: none;
+  width: 250px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #034769;
+}
+
+.form > button {
+  background: #ffb740;
+  border: 0;
+  border-radius: 5px;
+  color: #a66800;
+  padding: 5px 15px;
+  margin: 5px 2px;
+  a {
+    color: #a66800;;
+  }
+}
+
+.form > input::placeholder {
+  color: #034769;
+}
+
+.form-sidebar > button {
+  width: 100%;
+}
+
+.workspace {
+  background: #63add0;
+  position: relative;
+  min-height: 400px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  &-date {
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+
+  }
+  &-patients {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  &-actor {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+  }
+}

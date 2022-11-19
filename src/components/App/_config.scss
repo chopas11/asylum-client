@@ -1,0 +1,74 @@
+//-------------------------------< Cass Libraries >--------------------------------//
+// Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';
+// Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+// Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss';
+// // Font-awesome
+// @import 'node_modules/font-awesome/scss/font-awesome.scss'
+
+//----------------------------------< Variables >-----------------------------------//
+// Main font
+$font: visby-cf, sans-serif;
+// Accent color in page
+$accent: #e84c50;
+// Default size for text
+$fontsize: 16px;
+// Text color
+$textcolor: #034769;
+// Margin in grid tabs
+$grid-gutter-width: 20px;
+// Media breakpoint for adaptivity
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+//--------------------------------< Fonts Including >-------------------------------//
+// Mixin for fonts
+@mixin font($fname, $fstyle, $fweight, $furl, $format) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: local($fname), url($furl) format('ttf');
+  }
+}
+
+@font-face {
+  src: url('../../assets/fonts/VisbyCF-Medium.woff2') format('woff2');
+  font-family: 'visby-cf';
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url('../../assets/fonts/VisbyCF-Bold.woff2') format('woff2');
+  font-family: 'visby-cf';
+  font-weight: 700;
+  font-style: normal;
+}
+
+//--------------------------------< General Styles >--------------------------------//:
+:selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  font-size: $fontsize;
+  color: $textcolor;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+
+
+
